@@ -3,32 +3,33 @@
   v-container(fill-height grid-list-xl)
     v-layout(row wrap text-xs-center)
       v-flex(xs12 sm4 justify-space-around)
-        h1.mb-2 {{ msg }}
-        img.my-2(src="../assets/theoriginalstooges.jpg" width="100%")
-        h2 Fubars a Gogo
-        h3 Make This Tab Group Responsive
+        h1
+          v-icon(large) all_inclusive
+        h2.mb-3 {{ msg }}
+        img(src="../assets/shemp.jpg" width="200px")
+        h3.mt-3 Another Howard Brother
 
       v-flex(xs12 md4 justify-space-around)
-
-        h1.mb-2 {{ msg }}
-        img.my-2(src="../assets/theoriginalstooges.jpg" width="100%")
-        h2 Fubars a Gogo
-        h3 Make This Tab Group Responsive
+        h1
+          v-icon(large) all_inclusive
+        h2.mb-3 {{ msg }}
+        img(src="../assets/shemp.jpg" width="200px")
+        h3.mt-3 Another Howard Brother
 
       v-flex(xs12 md4 justify-space-around)
-
-        h1.mb-2 {{ msg }}
-        img.my-2(src="../assets/theoriginalstooges.jpg" width="100%")
-        h2 Fubars a Gogo
-        h3 Make This Tab Group Responsive
+        h1
+          v-icon(large) all_inclusive
+        h2.mb-3 {{ msg }}
+        img(src="../assets/shemp.jpg" width="200px")
+        h3.mt-3 Another Howard Brother
 </template>
 
 <script>
 export default {
-  name: 'Adeus',
+  name: 'Farewell',
   data () {
     return {
-      msg: 'De Stultorum Trinitate'
+      msg: 'Did Shemp Smoke Hemp?'
     }
   }
 }

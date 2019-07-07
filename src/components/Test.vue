@@ -1,26 +1,14 @@
-<template>
-  <div>
-    <v-tabs v-model="active">
-      <v-tabs-bar class="cyan" dark>
-        <v-tabs-item
-          v-for="tab in tabs"
-          :key="tab.url"
-          ripple
-          :to="tab.url"
-        >
-          Item {{ tab.name }}
-        </v-tabs-item>
-        <v-tabs-slider color="yellow"></v-tabs-slider>
-      </v-tabs-bar>
-    </v-tabs>
-    <v-card flat>
-      <v-slide-x-transition mode="out-in">
-        <router-view></router-view>
-      </v-slide-x-transition>
-    </v-card>
+<template lang="pug">
+div
+  v-tabs(v-model='active')
+    v-tabs-bar.blue-grey(dark='')
+      v-tabs-item(v-for='tab in tabs', :key='tab.url', ripple='', :to='tab.url')
+        | {{ tab.name }}
+      v-tabs-slider(color='black')
 
-
-  </div>
+  v-card.pa-3(raised='')
+    v-slide-x-transition(mode='out-in')
+      router-view
 </template>
 
 <script>
@@ -28,11 +16,21 @@
     data () {
       return {
         tabs: [
-          { url: '/Test', name: '1' },
-          { url: '/Test/tab-2', name: '2' }
+          { url: '/x-file', name: 'Stooges Altogether' },
+          { url: '/x-file/tab-2', name: 'Moe' },
+          { url: '/x-file/tab-3', name: 'Curly' },
+          { url: '/x-file/tab-4', name: 'Larry' },
+          { url: '/x-file/tab-5', name: 'Shemp' },
+          { url: '/x-file/tab-6', name: 'Curly Joe' }
         ],
         active: null,
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      }
+    },
+      methods: {
+        next () {
+          const active = parseInt(this.active)
+          this.active = (active < 2 ? active + 1 : 0)
       }
     }
   }
