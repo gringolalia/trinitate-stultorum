@@ -6,7 +6,7 @@ v-app(light)
 			v-list.pa-0
 				v-list-tile(avatar)
 					v-list-tile-avatar
-						i.fa.fa-gears.fa-2x
+						i.fas.fa-gears.fa-2x
 					v-list-tile-content
 						v-list-tile-title.dignity The Ant Irony Bloc
 		v-list(@click.native.stop="drawer = !drawer")

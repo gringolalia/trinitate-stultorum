@@ -4,17 +4,15 @@
 		v-layout(justify-center align-center)
 			v-flex(text-xs-center)
 				h1.display-2.my-2 Quem Fez in Media Res?
-				h2.display-1 O Gran Bretônio Desmascarado
+				h2.display-1 O Gran Bretônio Pandemônio
 				h3.headline.mt-2 Ao Vivo da Vila Beatriz
 				img.mt-3(src='../assets/biohazard.svg', width='125px')
 				p
 					v-btn.blue-grey.white--text.with.dignity.mt-3(large to="/sobre-aquilo")
 						v-icon group
 						| &nbsp; De Quem a Culpa?
-
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
 	font-weight: normal;

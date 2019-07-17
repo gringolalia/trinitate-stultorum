@@ -6,6 +6,14 @@
         h1 {{ msg }}
         img.my-3(src="../assets/curlywithhair.jpg" width="250px")
         h2.my-2 Violent Is The Word for Curly
+      v-flex(xs12 sm4 justify-space-around)
+        h1 {{ msg }}
+        img.my-3(src="../assets/curlywithhair.jpg" width="250px")
+        h2.my-2 Violent Is The Word for Curly
+      v-flex(xs12 sm4 justify-space-around)
+        h1 {{ msg }}
+        img.my-3(src="../assets/curlywithhair.jpg" width="250px")
+        h2.my-2 Violent Is The Word for Curly
 </template>
 
 <script>

@@ -13,6 +13,19 @@
           h2 This Man Took the Place of Curly
           h1.mt-2
             i.fa.fa-gears.fa-5x
+
+
+        v-flex(xs12 md6 justify-space-around)
+          h1 {{ msg }}
+          h2 This Man Took the Place of Curly
+          h1.mt-2
+            i.fa.fa-gears.fa-5x
+
+        v-flex(xs12 md6 justify-space-around)
+          h1 {{ msg }}
+          h2 This Man Took the Place of Curly
+          h1.mt-2
+            i.fa.fa-gears.fa-5x
 </template>
 
 <script>

@@ -27,11 +27,22 @@ export default new Router({
       name: 'HelloWorld',
       component: HelloWorld
     },
+		{
+      path: '/band-of-gypsies',
+      name: 'Hendrix',
+      component: Hendrix
+    },
     {
       path: '/sobre-isso',
       name: 'SobrePobre',
       component: SobreIsso
     },
+    {
+      path: '/brothers-marx',
+      name: 'Marxists',
+      component: Marxism
+    },
+
     {
       path: '/sobre-aquilo',
       name: 'SobreNobre',

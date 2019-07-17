@@ -1,8 +1,7 @@
 <template lang="pug">
-.hello
-	v-container(fill-height grid-list-xl style="height: calc(100vh - 35px;")
-		v-layout(row wrap text-xs-center)
-			v-flex(xs12 justify-space-around)
+	v-container.mt-5(fill-height grid-list-xl)
+		v-layout(row wrap justify-content="center" align-items="center")
+			v-flex(text-xs-center)
 				h1.display-2.my-2 {{ msg }}
 				h2.display-1 Winter in San Pavlov
 				h3.headline.mt-2 Triângulos Memoráveis na História
@@ -25,7 +24,14 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
+v-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 h1, h2 {
 	font-weight: normal;
 }

@@ -19,7 +19,7 @@
       v-flex(d-flex xs12 sm6 md4)
         v-card.pa-3(color='blue-grey', dark)
           v-card-title.title.with.dignity(primary)
-            i.fa.fa-archway.fa.lg.mr-2
+            i.fa.fa-archway.fa-lg.mr-2
             | Lorem
 
           v-card-text {{ lorem }}
@@ -29,7 +29,7 @@
           v-flex(d-flex)
             v-card.pa-3(color='grey lighten-2' light)
               v-card-title.title.with.dignity(primary)
-                i.fa.fa-archway.fa.lg.mr-2
+                i.fa.fa-archway.fa-lg.mr-2
                 | Forum
               v-card-text {{ lorem.slice(0, 70) }}
 
@@ -38,21 +38,21 @@
               v-flex(v-for='n in 2', :key='n', d-flex xs12)
                 v-card.pa-3(color='red lighten-2', dark)
                   v-card-title.title.with.dignity(primary)
-                    i.fa.fa-archway.fa.lg.mr-2
+                    i.fa.fa-archway.fa-lg.mr-2
                     | Quorum
                   v-card-text {{ lorem.slice(0, 40) }}
 
       v-flex(d-flex xs12 sm6 md2 child-flex)
         v-card.pa-3(color='yellow lighten-4' light)
           v-card-title.title.with.dignity(primary)
-            i.fa.fa-archway.fa.lg.mr-2
+            i.fa.fa-archway.fa-lg.mr-2
             | Procul
           v-card-text {{ lorem.slice(0, 90) }}
 
       v-flex(d-flex xs12 sm6 md3)
         v-card.pa-3(color='black' dark)
           v-card-title.title.with.dignity(primary)
-            i.fa.fa-archway.fa.lg.mr-2
+            i.fa.fa-archway.fa-lg.mr-2
             | Harum
           v-card-text {{ lorem.slice(0, 100) }}
 </template>
